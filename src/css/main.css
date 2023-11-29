@@ -28,6 +28,9 @@ Video{
   left: 5vw;
   top: 35vh;
 }
+.Text__Home span {
+    color: #fff;
+}
 
 @media only screen and (max-width: 1110px) {
 .Container__Home{
