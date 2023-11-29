@@ -4,7 +4,7 @@ li {
     --glow-spread-color: rgba(191, 123, 255, 0.781);
     --enhanced-glow-color: rgb(231, 206, 255);
     --btn-color: rgb(100, 61, 136);
-    border: .25em solid var(--glow-color);
+    border: .15em solid var(--glow-color);
     padding: 0.5em 1em;
     color: var(--glow-color);
     font-size: 15px;

@@ -30,8 +30,8 @@ Video{
 	justify-content: space-around;
 }
 
-/* #mainNav ul li a {
-	color: #333;
+#mainNav ul li a {
+	color: #fff;
 	font-weight: 500;
 	transition: color 0.4s;
-} */
+}
