@@ -49,6 +49,6 @@ li {
    }
 
 .bg-black {
-background: transparent !important;
-border: .05em solid var(--glow-color);
+       background:  rgba(217, 176, 255,0.1)  !important;
+       border: .05em solid var(--glow-color);
 }
