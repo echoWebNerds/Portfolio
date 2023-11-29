@@ -54,3 +54,18 @@ Video{
 	font-weight: 500;
 	transition: color 0.4s;
 }
+.menu-icon{
+	margin: auto;
+}
+.menu-icon i{
+font-size: 2em;
+text-align: center;
+color: #fff;
+display: hidden;
+}
+@media only screen and (max-width: 655px) {
+	.menu-icon i{
+	  display: inline;
+	  color: red;
+	}
+  }
