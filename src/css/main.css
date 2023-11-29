@@ -3,14 +3,24 @@
     padding: 0px;
 }
 .Container__Home{
-    position: relative;
-
 }
 .bg__Video{
-    position: absolute;
+    /* position: absolute; */
 }
 Video{
     background: black;
     width: 100vw;
     height: 100vh;
+}
+@media only screen and (max-width: 1110px) {
+.Container__Home{
+    width: 100vw;
+    overflow-x: hidden;
+}
+Video{
+    background: black;
+    width: auto;
+    height: 100vh;
+    overflow-x: hidden;
+}
 }
