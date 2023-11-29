@@ -2,6 +2,13 @@
     margin: 0px;
     padding: 0px;
 }
+.Container__Home{
+    position: relative;
+    
+}
+.bg__Video{
+    position: absolute;
+}
 Video{
     background: black;
     width: 100vw;
