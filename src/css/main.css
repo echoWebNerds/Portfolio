@@ -5,11 +5,11 @@
 	text-decoration: none;
 	list-style: none;
 }
-.Container__Home{
+/* .Container__Home{
 }
 .bg__Video{
-    /* position: absolute; */
-}
+    position: absolute;
+} */
 Video{
     background: black;
     width: 100%;
@@ -137,7 +137,4 @@ Video{
 /* collapse */
 #collapse{
 	width: 100%;
-}
-.hidden{
-	display:none;
 }
