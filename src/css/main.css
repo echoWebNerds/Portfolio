@@ -138,3 +138,6 @@ Video{
 #collapse{
 	width: 100%;
 }
+.hidden{
+	display:none;
+}

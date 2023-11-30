@@ -9,7 +9,7 @@ const collapse=$.querySelector("#collapse")
 function reportWindowSize(){
   // console.log("resize")
   if (window.innerWidth < 655) {
-    let newMenu=collapse.appendChild(menuItems);
+    collapse.appendChild(menuItems);
     // console.log(newMenu)
   } else{
     mainNav.appendChild(menuItems)
