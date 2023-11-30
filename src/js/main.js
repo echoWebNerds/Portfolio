@@ -1,7 +1,19 @@
 const $ = document;
 const mainNav = $.querySelector("#mainNav");
-const switchElement=$.querySelector(".switch")
+const switchElement=$.querySelector(".switch");
+const menuItems=$.querySelectorAll("#menu");
+const collapse=$.querySelector("#collapse")
 
+
+
+function reportWindowSize(){
+  console.log("resize")
+  if (window.innerWidth < 655) {
+    let newMenu=collapse.append(menuItems);
+    menuItems.style.d
+    console.log(newMenu)
+  } 
+}
 
 
 switchElement.addEventListener("click", function() {
@@ -18,7 +30,7 @@ switchElement.addEventListener("click", function() {
 
 document.addEventListener("scroll", function () {
   // console.log(document.documentElement.scrollTop)
-console.log(window.s);
+// console.log(window.s);
   if (window.scrollY > 0) {
     mainNav.classList.add("bg-black");
   } else {
@@ -34,3 +46,6 @@ window.onload=function(){
     document.body.classList.add("dark")
   }
 }
+
+
+window.addEventListener("resize", reportWindowSize);

@@ -134,7 +134,7 @@ Video{
 	color: rgb(255, 255, 255);
   }
   /* ***************** end of dark mode ********************* */
-
-  .list-icon{
-	width :20%;
-  }
+/* collapse */
+#collapse{
+	width: 100%;
+}
