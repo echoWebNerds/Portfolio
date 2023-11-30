@@ -50,5 +50,7 @@ li {
 
 .bg-black {
        background:  rgba(217, 176, 255,0.1)  !important;
-       border: .05em solid var(--glow-color);
+       border-bottom:.05em solid rgb(217, 176, 255);;
+       height: 10vh;
+
 }

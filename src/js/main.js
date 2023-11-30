@@ -1,7 +1,22 @@
 const $ = document;
 const mainNav = $.querySelector("#mainNav");
+const switchElement=$.querySelector(".switch")
 
-document.addEventListener("scroll", function (e) {
+
+
+switchElement.addEventListener("click", function() {
+  // console.log("dark")
+  document.body.classList.toggle("dark");
+  if(document.body.className.includes("dark")){
+    localStorage.setItem("theme", "dark");
+  }else{
+    localStorage.setItem("theme" , "light");
+  }
+
+})
+
+
+document.addEventListener("scroll", function () {
   // console.log(document.documentElement.scrollTop)
 console.log(window.s);
   if (window.scrollY > 0) {
@@ -10,3 +25,12 @@ console.log(window.s);
     mainNav.classList.remove("bg-black");
   }
 });
+
+// save theme in localstorage
+window.onload=function(){
+  let localStorageTheme=localStorage.getItem("theme")
+  // console.log(localStorageTheme)
+  if(localStorageTheme==="dark"){
+    document.body.classList.add("dark")
+  }
+}

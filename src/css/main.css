@@ -69,3 +69,63 @@ display: hidden;
 	  color: red;
 	}
   }
+
+  .logo{
+	margin-top:0.6rem ;
+  }
+  .logo img{
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+  }
+
+
+  /* ******************** dark mode **************************۸ */
+.switch {
+	width: 80px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: rgb(39, 38, 38);
+	position: relative;
+  }
+  
+  .flicker {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	transition: 0.3s;
+	box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+	  inset -4px -4px 4px rgb(195 193 198 / 90%);
+  }
+  
+  .dark {
+	background-color: rgba(0, 0, 0, 0.959);
+	transition: 0.3s;
+  }
+  
+  .moon {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+	position: absolute;
+	top: 5px;
+	left: 45px;
+  }
+  
+  .dark .flicker {
+	transform: translateX(40px);
+  }
+  
+  .dark > * {
+	color: rgb(255, 255, 255);
+  }
+  /* ***************** end of dark mode ********************* */
+
+  .list-icon{
+	width :20%;
+  }
