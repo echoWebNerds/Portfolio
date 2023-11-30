@@ -60,17 +60,16 @@ Video{
 	text-align: center;
 }
 .menu-icon i{
-font-size: 2em;
-text-align: center;
-color: #fff;
-margin-top:1.5rem;
-margin-left: 0.5rem;
-display: hidden;
+	display: none;
 }
 @media only screen and (max-width: 655px) {
 	.menu-icon i{
-	  display: inline;
-	  color: red;
+		font-size: 2em;
+		text-align: center;
+		color: #fff;
+		margin-top:1.5rem;
+		margin-left: 0.5rem;
+		display: block;
 	}
   }
 
@@ -85,13 +84,17 @@ display: hidden;
 
 
   /* ******************** dark mode **************************۸ */
-.switch {
+
+  .switch {
+	--glow-color: rgb(217, 176, 255);
+
 	margin-top: 1.2rem;
 	margin-left: auto;
 	width: 80px;
 	height: 40px;
+	border: 1px solid var(--glow-color);
 	border-radius: 20px;
-	background-color: rgb(39, 38, 38);
+	background-color: transparent;
 	position: relative;
   }
   
