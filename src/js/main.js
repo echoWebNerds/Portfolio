@@ -1,7 +1,7 @@
 const $ = document;
 const mainNav = $.querySelector("#mainNav");
 const switchElement=$.querySelector(".switch");
-const menuItems=$.querySelectorAll("#menu");
+const menuItems=$.querySelector("#menu");
 const collapse=$.querySelector("#collapse")
 
 
@@ -9,10 +9,13 @@ const collapse=$.querySelector("#collapse")
 function reportWindowSize(){
   console.log("resize")
   if (window.innerWidth < 655) {
-    let newMenu=collapse.append(menuItems);
-    menuItems.style.d
+    let newMenu=collapse.appendChild(menuItems);
+    // menuItems.style.displa
     console.log(newMenu)
-  } 
+  } else{
+    mainNav.appendChild(menuItems)
+    collapse.removeChild(menuItems)
+  }
 }
 
 
