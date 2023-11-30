@@ -70,3 +70,11 @@ Video{
 	font-weight: 500;
 	transition: color 0.4s;
 }
+.Text__Home-Icon ul {
+display: flex;
+justify-content: center;
+}
+.Text__Home-Icon ul li {
+   width: 5vw;
+   height: 5vh;
+}

@@ -1,4 +1,4 @@
-li {
+.Header__navbar-list li {
    /* margin-right: 0.6rem; */
     --glow-color: rgb(217, 176, 255);
     --glow-spread-color: rgba(191, 123, 255, 0.781);
@@ -20,7 +20,7 @@ li {
     transition: all 0.3s;
    }
    
-   li::after {
+  .Header__navbar-list li::after {
     pointer-events: none;
     content: "";
     position: absolute;
@@ -34,7 +34,7 @@ li {
     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
    }
    
-   li:hover {
+ .Header__navbar-list  li:hover {
     color: var(--btn-color);
     background-color: var(--glow-color);
     box-shadow: 0 0 1em .25em var(--glow-color),
@@ -42,7 +42,7 @@ li {
            inset 0 0 .75em .25em var(--glow-color);
    }
    
-   li:active {
+ .Header__navbar-list  li:active {
     box-shadow: 0 0 0.3em .25em var(--glow-color),
            0 0 .5em .2em var(--glow-spread-color),
            inset 0 0 .5em .25em var(--glow-color);
