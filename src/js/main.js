@@ -14,7 +14,6 @@ function reportWindowSize(){
     console.log(newMenu)
   } else{
     mainNav.appendChild(menuItems)
-    collapse.removeChild(menuItems)
   }
 }
 
