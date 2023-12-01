@@ -4,15 +4,6 @@ const switchElement=$.querySelector(".switch");
 const menuItems=$.querySelector("#menu");
 const collapse=$.querySelector("#collapse")
 
-// console.log(mainNav);
-
-// function reportWindowSize(){
-//   if (window.innerWidth < 655) {
-//     collapse.appendChild(menuItems);
-//   } else{
-//     mainNav.appendChild(menuItems)
-//   }
-// }
 
 
 switchElement.addEventListener("click", function() {
@@ -45,6 +36,3 @@ window.onload=function(){
     document.body.classList.add("dark")
   }
 }
-
-
-//  window.addEventListener("resize", reportWindowSize);
