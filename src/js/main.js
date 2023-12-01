@@ -4,17 +4,15 @@ const switchElement=$.querySelector(".switch");
 const menuItems=$.querySelector("#menu");
 const collapse=$.querySelector("#collapse")
 
-console.log(mainNav);
+// console.log(mainNav);
 
-function reportWindowSize(){
-  // console.log("resize")
-  if (window.innerWidth < 655) {
-    collapse.appendChild(menuItems);
-    // console.log(newMenu)
-  } else{
-    mainNav.appendChild(menuItems)
-  }
-}
+// function reportWindowSize(){
+//   if (window.innerWidth < 655) {
+//     collapse.appendChild(menuItems);
+//   } else{
+//     mainNav.appendChild(menuItems)
+//   }
+// }
 
 
 switchElement.addEventListener("click", function() {
@@ -49,4 +47,4 @@ window.onload=function(){
 }
 
 
- window.addEventListener("resize", reportWindowSize);
+//  window.addEventListener("resize", reportWindowSize);
