@@ -4,7 +4,7 @@ const switchElement=$.querySelector(".switch");
 const menuItems=$.querySelector("#menu");
 const collapse=$.querySelector("#collapse")
 
-
+console.log(mainNav);
 
 function reportWindowSize(){
   // console.log("resize")
@@ -49,4 +49,4 @@ window.onload=function(){
 }
 
 
-window.addEventListener("resize", reportWindowSize);
+ window.addEventListener("resize", reportWindowSize);

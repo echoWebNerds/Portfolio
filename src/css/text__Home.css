@@ -3,20 +3,23 @@
   width: 80vw;
   }
   
-  
+  .svg__name{
+    width: 95vw;
+    height: 25vh;
+    font-size: 2em;
+    }
   
   svg text {
     font-family: Lora;
     letter-spacing: 10px;
     stroke: #ffa5d8;
-    font-size: 80px;
     font-weight: 700;
     stroke-width: 3;
    
     animation: textAnimate 5s infinite alternate;
     
   }
-  
+
   @keyframes textAnimate {
     0% {
       stroke-dasharray: 0 50%;
@@ -92,3 +95,17 @@
     font-weight: 600;
     animation: lights 5s 750ms linear infinite;
   }
+    @media only screen and (max-width: 655px){
+    .svg__name{
+      width: 95vw;
+      height: 15vh;
+      font-size: 0.7em;
+      }
+
+      .Text__Home-child{
+    margin: auto;
+    font-size: 2.5rem;
+    font-weight: 600;
+    animation: lights 5s 750ms linear infinite;
+  }
+}
