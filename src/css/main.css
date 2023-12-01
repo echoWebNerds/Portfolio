@@ -5,17 +5,32 @@
 	text-decoration: none;
 	list-style: none;
 }
-/* .Container__Home{
+.Container__Home{
+      position: relative;
 }
-.bg__Video{
+/* .bg__Video{
     position: absolute;
 } */
 Video{
     background: black;
     width: 100%;
     height: 100vh;
+    z-index: -2;
 }
-
+.Text__Home{
+    width: auto;
+    font-size: 3em;
+    position: absolute;
+  z-index: 5;
+  color: #5487d3;
+  color: #5487d3;
+  left: 5vw;
+  top: 35vh;
+}
+.Text__Home span {
+    color: #fff;
+	font-weight: 300;
+}
 
 @media only screen and (max-width: 1110px) {
 .Container__Home{
@@ -54,6 +69,13 @@ Video{
 	font-weight: 500;
 	transition: color 0.4s;
 }
+.Text__Home-Icon ul {
+display: flex;
+justify-content: center;
+}
+.Text__Home-Icon ul li {
+   width: 5vw;
+   height: 5vh;}
 #nav-btn{
 	display: flex;
 	margin-left: auto;
@@ -134,7 +156,6 @@ Video{
 	color: rgb(255, 255, 255);
   }
   /* ***************** end of dark mode ********************* */
-/* collapse */
 #collapse{
 	width: 100%;
 }

@@ -1,0 +1,94 @@
+
+.patterns {
+  width: 80vw;
+  }
+  
+  
+  
+  svg text {
+    font-family: Lora;
+    letter-spacing: 10px;
+    stroke: #ffa5d8;
+    font-size: 80px;
+    font-weight: 700;
+    stroke-width: 3;
+   
+    animation: textAnimate 5s infinite alternate;
+    
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsl(189, 68%, 75%)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+  }
+
+  @keyframes lights {
+  0% {
+    color: hsl(0, 66%, 77%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(12, 56%, 45%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(0, 75%, 34%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(19, 88%, 61%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(12, 37%, 56%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+  .Text__Home-first{
+    margin: 0;
+    font: 100% / 1.5 Raleway, sans-serif;
+    color: hsl(305, 70%, 43%);
+    /* background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%)); */
+  display: flex;
+  }
+  .Text__Home-child{
+    margin: auto;
+    font-size: 3.5rem;
+    font-weight: 600;
+    animation: lights 5s 750ms linear infinite;
+  }
