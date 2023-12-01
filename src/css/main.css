@@ -8,10 +8,9 @@
 .Container__Home{
       position: relative;
 }
-.bg__Video{
-    /* position: absolute; */
-  
-}
+/* .bg__Video{
+    position: absolute;
+} */
 Video{
     background: black;
     width: 100%;
@@ -48,7 +47,7 @@ Video{
 
 #mainNav {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: ; */
 	padding:  0px 16px;
 	position: fixed;
 	width: 100%;
@@ -76,5 +75,87 @@ justify-content: center;
 }
 .Text__Home-Icon ul li {
    width: 5vw;
-   height: 5vh;
+   height: 5vh;}
+#nav-btn{
+	display: flex;
+	margin-left: auto;
+	text-align: center;
+}
+.menu-icon i{
+	display: none;
+}
+@media only screen and (max-width: 655px) {
+	.menu-icon i{
+		font-size: 2em;
+		text-align: center;
+		color: #fff;
+		margin-top:1.5rem;
+		margin-left: 0.5rem;
+		display: block;
+	}
+  }
+
+  .logo{
+	margin-top:1rem ;
+  }
+  .logo img{
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+  }
+
+
+  /* ******************** dark mode **************************۸ */
+
+  .switch {
+	--glow-color: rgb(217, 176, 255);
+
+	margin-top: 1.2rem;
+	margin-left: auto;
+	width: 80px;
+	height: 40px;
+	border: 1px solid var(--glow-color);
+	border-radius: 20px;
+	background-color: transparent;
+	position: relative;
+  }
+  
+  .flicker {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	transition: 0.3s;
+	box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+	  inset -4px -4px 4px rgb(195 193 198 / 90%);
+  }
+  
+  .dark {
+	background-color: rgba(0, 0, 0, 0.959);
+	transition: 0.3s;
+  }
+  
+  .moon {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+	position: absolute;
+	top: 5px;
+	left: 45px;
+  }
+  
+  .dark .flicker {
+	transform: translateX(40px);
+  }
+  
+  .dark > * {
+	color: rgb(255, 255, 255);
+  }
+  /* ***************** end of dark mode ********************* */
+#collapse{
+	width: 100%;
 }

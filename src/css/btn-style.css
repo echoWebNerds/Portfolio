@@ -47,3 +47,20 @@
            0 0 .5em .2em var(--glow-spread-color),
            inset 0 0 .5em .25em var(--glow-color);
    }
+
+
+.bg-black {
+background:  rgba(217, 176, 255,0.1)  !important;
+border-bottom:.05em solid rgb(217, 176, 255);;
+height: 10vh;
+
+}
+@media only screen and (max-width: 655px){
+#menu{
+       display: flex;
+}
+.Header__navbar-list li{
+       width: 100%;
+}
+
+}
