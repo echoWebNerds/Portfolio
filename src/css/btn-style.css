@@ -55,6 +55,7 @@ border-bottom:.05em solid rgb(217, 176, 255);;
 height: 10vh;
 
 }
+
 @media only screen and (min-width: 655px){
 #menu{
        
@@ -68,6 +69,4 @@ height: 10vh;
 .Header__navbar-list li{
     width: 100%;
 }
-
-
 }

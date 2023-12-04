@@ -3,7 +3,9 @@ const mainNav = $.querySelector("#mainNav");
 const switchElement=$.querySelector(".switch");
 const menuItems=$.querySelector("#menu");
 const collapse=$.querySelector("#collapse")
+const icon=$.querySelector("#toggleMenu")
 
+const menuIcon=$.querySelector(".icon")
 
 
 switchElement.addEventListener("click", function() {
@@ -36,3 +38,21 @@ window.onload=function(){
     document.body.classList.add("dark")
   }
 }
+
+function iconHandler() {
+  collapse.append(menuItems)
+
+  if (menuItems.style.display === "none") {
+    menuItems.style.display = "flex";
+    mainNav.classList.add("new-nav")
+    menuItems.classList.add("new-list")
+
+  } else {
+    menuItems.style.display = "none";
+    mainNav.classList.remove("new-nav")
+    menuItems.classList.remove("new-list")
+
+  }
+}
+
+icon.addEventListener('click', iconHandler)
